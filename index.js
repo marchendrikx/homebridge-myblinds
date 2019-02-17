@@ -5,10 +5,10 @@ var exec = require('child_process').exec;
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory('homebridge-myblinds', 'myblindsCommand', myblindsCmdAccessory);
+  homebridge.registerAccessory('homebridge-myblinds-mh', 'myblindsmhCommand', myblindsmhCmdAccessory);
 };
 
-function myblindsCmdAccessory(log, config) {
+function myblindsmhCmdAccessory(log, config) {
   this.log = log;
   this.name = config.name;
   this.openCommand = config.open;
@@ -18,7 +18,7 @@ function myblindsCmdAccessory(log, config) {
   this.pollStateDelay = config.poll_state_delay || 0;
 }
 
-myblindsCmdAccessory.prototype.setState = function(isClosed, callback, context) {
+myblindsmhCmdAccessory.prototype.setState = function(isClosed, callback, context) {
   if (context === 'pollState') {
     // The state has been updated by the pollState command - don't run the open/close command
     callback(null);
