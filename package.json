@@ -1,7 +1,7 @@
 {
-  "name": "homebridge-myblinds",
+  "name": "homebridge-myblindsmh",
   "version": "0.2.0",
-  "description": "Garage Door plugin for homebridge: https://github.com/nfarina/homebridge",
+  "description": "Garage Door plugin for homebridge: https://github.com/marchendrikx/homebridge-myblindsmh",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/marchendrikx/homebridge-myblinds.git"
+    "url": "git://github.com/marchendrikx/homebridge-myblindsmh.git"
   },
   "dependencies": {}
 }
