@@ -5,7 +5,7 @@ var exec = require('child_process').exec;
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory('homebridge-myblinds-mh', 'myblindsmhCommand', myblindsmhCmdAccessory);
+  homebridge.registerAccessory('homebridge-myblindsmh', 'myblindsmhCommand', myblindsmhCmdAccessory);
 };
 
 function myblindsmhCmdAccessory(log, config) {
