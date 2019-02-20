@@ -15,7 +15,7 @@
     "url": "git+https://github.com/marchendrikx/homebridge-myblindsmh.git"
   },
   "keywords": [
-    "homebridge",
+    "homebridge-plugin",
     "blinds"
   ],
   "author": "marc hendrikx",
